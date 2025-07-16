@@ -1,0 +1,22 @@
+package:
+  name: quantummetagpt
+  version: 0.1.0
+
+source:
+  path: ../
+
+build:
+  script: python -m pip install --no-deps .
+
+requirements:
+  host:
+    - python >=3.10
+    - pip
+  run:
+    - python >=3.10
+    - qiskit >=0.44
+    - stable-baselines3 >=2.0
+    # Add other dependencies
+
+about:
+  summary: Autonomous quantum AI research agent
